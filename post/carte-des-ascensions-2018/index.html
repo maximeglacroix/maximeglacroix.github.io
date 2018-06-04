@@ -18,7 +18,7 @@
     
   
   <meta name="description" content="Cette page permet d’afficher les différentes montées qui ont été effectuées par Alexandre Angers et Maxime Lacroix, en utilisant l’application Leaflet. Leaflet semble ne pas fonctionner parfaitement avec Firefox ou Chrome. Sur Edge, ça fonctionne un peu mieux. En cliquant sur chacun des points sur la carte, vous pouvez trouver de l’information sur chacune des montees.
-{&#34;x&#34;:{&#34;options&#34;:{&#34;crs&#34;:{&#34;crsClass&#34;:&#34;L.CRS.EPSG3857&#34;,&#34;code&#34;:null,&#34;proj4def&#34;:null,&#34;projectedBounds&#34;:null,&#34;options&#34;:{}}},&#34;calls&#34;:[{&#34;method&#34;:&#34;addTiles&#34;,&#34;args&#34;:[&#34;//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#34;,null,null,{&#34;minZoom&#34;:0,&#34;maxZoom&#34;:18,&#34;tileSize&#34;:256,&#34;subdomains&#34;:&#34;abc&#34;,&#34;errorTileUrl&#34;:&#34;&#34;,&#34;tms&#34;:false,&#34;noWrap&#34;:false,&#34;zoomOffset&#34;:0,&#34;zoomReverse&#34;:false,&#34;opacity&#34;:1,&#34;zIndex&#34;:1,&#34;detectRetina&#34;:false,&#34;attribution&#34;:&#34;&copy; OpenStreetMap contributors, CC-BY-SA&#34;}]},{&#34;method&#34;:&#34;addMarkers&#34;,&#34;args&#34;:[[47.131239,47.075504],[-71.373538,-70.906842],null,null,null,{&#34;interactive&#34;:true,&#34;draggable&#34;:false,&#34;keyboard&#34;:true,&#34;title&#34;:&#34;&#34;,&#34;alt&#34;:&#34;&#34;,&#34;zIndexOffset&#34;:0,&#34;opacity&#34;:1,&#34;riseOnHover&#34;:false,&#34;riseOffset&#34;:250},[&#34;Date : 21 mai 2018Endroit : Parc national de la Jacques CartierSentier : Les Loups (1er Belvedere)Duree : 1h30Distance : 4.">
+{&#34;x&#34;:{&#34;filter&#34;:&#34;none&#34;,&#34;data&#34;:[[&#34;1&#34;,&#34;2&#34;],[&#34;21 mai 2018&#34;,&#34;26 mai 2018&#34;],[&#34;Parc national de la Jacques Cartier&#34;">
 
   
   <link rel="alternate" hreflang="en-us" href="https://maximeglacroix.github.io/post/carte-des-ascensions-2018/">
@@ -78,7 +78,7 @@
   <meta property="og:url" content="https://maximeglacroix.github.io/post/carte-des-ascensions-2018/">
   <meta property="og:title" content="Carte des Ascensions 2018 | Maxime Lacroix">
   <meta property="og:description" content="Cette page permet d’afficher les différentes montées qui ont été effectuées par Alexandre Angers et Maxime Lacroix, en utilisant l’application Leaflet. Leaflet semble ne pas fonctionner parfaitement avec Firefox ou Chrome. Sur Edge, ça fonctionne un peu mieux. En cliquant sur chacun des points sur la carte, vous pouvez trouver de l’information sur chacune des montees.
-{&#34;x&#34;:{&#34;options&#34;:{&#34;crs&#34;:{&#34;crsClass&#34;:&#34;L.CRS.EPSG3857&#34;,&#34;code&#34;:null,&#34;proj4def&#34;:null,&#34;projectedBounds&#34;:null,&#34;options&#34;:{}}},&#34;calls&#34;:[{&#34;method&#34;:&#34;addTiles&#34;,&#34;args&#34;:[&#34;//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#34;,null,null,{&#34;minZoom&#34;:0,&#34;maxZoom&#34;:18,&#34;tileSize&#34;:256,&#34;subdomains&#34;:&#34;abc&#34;,&#34;errorTileUrl&#34;:&#34;&#34;,&#34;tms&#34;:false,&#34;noWrap&#34;:false,&#34;zoomOffset&#34;:0,&#34;zoomReverse&#34;:false,&#34;opacity&#34;:1,&#34;zIndex&#34;:1,&#34;detectRetina&#34;:false,&#34;attribution&#34;:&#34;&copy; OpenStreetMap contributors, CC-BY-SA&#34;}]},{&#34;method&#34;:&#34;addMarkers&#34;,&#34;args&#34;:[[47.131239,47.075504],[-71.373538,-70.906842],null,null,null,{&#34;interactive&#34;:true,&#34;draggable&#34;:false,&#34;keyboard&#34;:true,&#34;title&#34;:&#34;&#34;,&#34;alt&#34;:&#34;&#34;,&#34;zIndexOffset&#34;:0,&#34;opacity&#34;:1,&#34;riseOnHover&#34;:false,&#34;riseOffset&#34;:250},[&#34;Date : 21 mai 2018Endroit : Parc national de la Jacques CartierSentier : Les Loups (1er Belvedere)Duree : 1h30Distance : 4.">
+{&#34;x&#34;:{&#34;filter&#34;:&#34;none&#34;,&#34;data&#34;:[[&#34;1&#34;,&#34;2&#34;],[&#34;21 mai 2018&#34;,&#34;26 mai 2018&#34;],[&#34;Parc national de la Jacques Cartier&#34;">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-06-04T00:00:00&#43;00:00">
@@ -300,18 +300,18 @@
     <div class="article-style" itemprop="articleBody">
       <script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
 <script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
-<link href="/rmarkdown-libs/leaflet/leaflet.css" rel="stylesheet" />
-<script src="/rmarkdown-libs/leaflet/leaflet.js"></script>
-<link href="/rmarkdown-libs/leafletfix/leafletfix.css" rel="stylesheet" />
-<script src="/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js"></script>
-<script src="/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js"></script>
-<link href="/rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
-<script src="/rmarkdown-libs/leaflet-binding/leaflet.js"></script>
+<link href="/rmarkdown-libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/datatables-binding/datatables.js"></script>
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js"></script>
+<link href="/rmarkdown-libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
 
 
 <p>Cette page permet d’afficher les différentes montées qui ont été effectuées par Alexandre Angers et Maxime Lacroix, en utilisant l’application Leaflet. Leaflet semble ne pas fonctionner parfaitement avec Firefox ou Chrome. Sur Edge, ça fonctionne un peu mieux. En cliquant sur chacun des points sur la carte, vous pouvez trouver de l’information sur chacune des montees.</p>
-<p><div id="htmlwidget-1" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[47.131239,47.075504],[-71.373538,-70.906842],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Date : 21 mai 2018<br/>Endroit : Parc national de la Jacques Cartier<br/>Sentier : Les Loups (1er Belvedere)<br/>Duree : 1h30<br/>Distance : 4.8 km","Date : 26 mai 2018<br/>Endroit : Mont Saint-Anne<br/>Sentier : La Liberiste<br/>Duree : 3h39<br/>Distance : 13.18 km"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[47.075504,47.131239],"lng":[-71.373538,-70.906842]}},"evals":[],"jsHooks":[]}</script> Date Endroit 1 21 mai 2018 Parc national de la Jacques Cartier 2 26 mai 2018 Mont Saint-Anne Sentier Duree Distance 1 Les Loups (1er Belvedere) 1h30 4.8 km 2 La Liberiste 3h39 13.18 km</p>
+<div id="htmlwidget-1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"filter":"none","data":[["1","2"],["21 mai 2018","26 mai 2018"],["Parc national de la Jacques Cartier","Mont Saint-Anne"],["Les Loups (1er Belvedere)","La Liberiste"],["1h30","3h39"],["4.8 km","13.18 km"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Date<\/th>\n      <th>Endroit<\/th>\n      <th>Sentier<\/th>\n      <th>Duree<\/th>\n      <th>Distance<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
 
     </div>
 
